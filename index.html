@@ -6,144 +6,158 @@
   <title>ريان القارحي | ملف الأعمال</title>
   <meta name="description" content="ريان القارحي: صانع محتوى وموشن جرافيك، خريج إعلام تخصص علاقات عامة. إعلانات موشن، إعلانات بالذكاء الاصطناعي، تصوير ومونتاج، وهويات بصرية.">
   <meta property="og:title" content="ريان القارحي | ملف الأعمال">
-  <meta property="og:description" content="إعلانات موشن جرافيك، إعلانات AI، تصوير ومونتاج، وهويات بصرية.">
+  <meta property="og:description" content="إعلانات موشن جرافيك، إعلانات بالذكاء الاصطناعي، تصوير ومونتاج، وهويات بصرية.">
   <meta property="og:image" content="media/portrait.jpg">
-  <meta name="theme-color" content="#0d0c0b">
+  <meta name="theme-color" content="#87bdc6">
+  <link rel="preload" href="fonts/thmanyahserifdisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/thmanyahseriftext-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="loading">
   <a class="skip" href="#work">تخطَّ إلى الأعمال</a>
 
   <header class="top" id="top">
-    <a class="brand" href="#home">ريان<span>.</span></a>
+    <a class="brand" href="#home" aria-label="ريان القارحي، الصفحة الرئيسية">ريان القارحي<i class="dot"></i></a>
     <nav class="nav" id="nav" aria-label="القائمة">
-      <a href="#about"><i>01</i>نبذة</a>
-      <a href="#work"><i>02</i>أعمالي</a>
-      <a href="#certs"><i>03</i>الشهادات</a>
-      <a href="#contact"><i>04</i>تواصل</a>
+      <a href="#about">عني</a>
+      <a href="#work">أعمالي</a>
+      <a href="#identity">الهويات</a>
+      <a href="#certs">الشهادات</a>
+      <a class="nav-cta" id="navWa" href="#" target="_blank" rel="noopener">راسلني واتساب</a>
     </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
   </header>
 
   <main>
-    <!-- الواجهة -->
+    <!-- ===== الواجهة ===== -->
     <section class="hero" id="home">
-      <div class="hero-text">
-        <p class="eyebrow"><span class="rec"></span> ملف الأعمال · 2026</p>
-        <h1>ريان<br>القارحي</h1>
-        <p class="role">صانع محتوى وموشن جرافيك · إعلامي متخصص في العلاقات العامة</p>
-        <p class="lead">أكتب الفكرة، أصوّرها، أمنتجها، وأحركها. إعلانات موشن، إعلانات بالذكاء الاصطناعي، تغطيات، وهويات بصرية.</p>
-        <div class="cta">
-          <a class="btn primary" href="#work">شاهد أعمالي</a>
-          <a class="btn ghost" id="heroWa" href="#" target="_blank" rel="noopener">تواصل واتساب</a>
+      <div class="hero-panel">
+        <span class="orb orb-coral" data-par="-0.12" aria-hidden="true"></span>
+        <span class="orb orb-mist" data-par="0.08" aria-hidden="true"></span>
+
+        <div class="hero-text">
+          <p class="hero-kicker split">صانع محتوى وموشن جرافيك</p>
+          <h1 class="hero-name split">ريان القارحي</h1>
+          <p class="hero-line split">أكتب الفكرة، أصوّرها، أمنتجها، وأحرّكها لين يوقف الناس ويشوفون.</p>
+          <div class="hero-cta">
+            <a class="btn btn-ink" href="#work">شاهد أعمالي</a>
+            <a class="btn btn-line" id="heroWa" href="#" target="_blank" rel="noopener">راسلني واتساب</a>
+          </div>
+          <dl class="hero-facts" id="facts"></dl>
         </div>
+
+        <figure class="hero-photo">
+          <div class="photo-frame"><span class="arch" aria-hidden="true"></span><img src="media/portrait-cut.webp" alt="ريان القارحي" width="900" height="1328" fetchpriority="high"></div>
+          <figcaption class="photo-tag">
+            <b>اختصاصي دعاية وإعلان</b>
+            <span>مرخّص من الهيئة العامة لتنظيم الإعلام</span>
+          </figcaption>
+        </figure>
       </div>
-      <figure class="hero-photo">
-        <img src="media/portrait.jpg" alt="ريان القارحي" width="800" height="1200">
-        <figcaption><span>REC</span> 00:00:00:01</figcaption>
-      </figure>
     </section>
 
-    <div class="stats" id="stats"></div>
+    <!-- شريط المهارات -->
+    <div class="ticker" aria-label="المهارات">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
 
-    <!-- نبذة -->
+    <!-- ===== عني ===== -->
     <section class="about" id="about">
-      <div class="sec-head">
-        <span class="num">01</span>
-        <h2>نبذة عني</h2>
-      </div>
-      <div class="about-grid">
-        <p class="about-text">
-          خريج إعلام تخصص علاقات عامة من جامعة أم القرى، ومسجّل لدى الهيئة العامة لتنظيم الإعلام بمسمى
-          <b>اختصاصي دعاية وإعلان</b> و<b>اختصاصي إعلامي</b>.
+      <div class="about-card">
+        <h2 class="h2 split">عني</h2>
+        <p class="about-lead">
+          خريج إعلام تخصص علاقات عامة من جامعة أم القرى، ومسجّل لدى الهيئة العامة لتنظيم الإعلام
+          اختصاصي دعاية وإعلان واختصاصي إعلامي.
+        </p>
+        <p class="about-body">
           أصنع إعلانات قصيرة بالموشن جرافيك، وأنتج لقطات وإعلانات منتجات بأدوات الذكاء الاصطناعي،
           وأصوّر وأمنتج التغطيات والفعاليات، وأصمم الهويات البصرية.
-          اشتغلت سنوات في المبيعات وخدمة العملاء والاستقبال الفندقي، وهذا علّمني أكتب للعميل بلغته.
+          اشتغلت سنوات في المبيعات وخدمة العملاء والاستقبال الفندقي، فصرت أكتب للعميل بلغته وأعرف وش يوقّفه.
         </p>
-        <ul class="skills">
-          <li>موشن جرافيك</li><li>مونتاج الفيديو</li><li>إعلانات بالذكاء الاصطناعي</li>
-          <li>التصوير والتغطيات</li><li>الهوية البصرية</li><li>كتابة المحتوى الإعلاني</li>
-          <li>العلاقات العامة</li><li>تنظيم الفعاليات</li><li>التسويق الرقمي</li>
-        </ul>
       </div>
+      <ul class="about-tools" id="tools"></ul>
     </section>
 
-    <!-- الأعمال -->
+    <!-- ===== الأعمال ===== -->
     <section class="work" id="work">
-      <div class="sec-head">
-        <span class="num">02</span>
-        <h2>أعمالي</h2>
-      </div>
-      <nav class="chips" id="chips" aria-label="أقسام الأعمال"></nav>
-      <div id="sections"></div>
-
-      <section class="work-sec" id="identity">
-        <header class="work-head">
-          <div>
-            <p class="en">Brand Identities</p>
-            <h3>هويات بصرية</h3>
-            <p class="desc">أدلة هوية وشعارات صممتها: اضغط على أي هوية لتتصفح صفحاتها.</p>
-          </div>
-          <span class="count" id="idCount"></span>
+      <div class="work-inner">
+        <header class="work-intro">
+          <h2 class="h2 split">أعمالي</h2>
+          <p>كل قسم من ملف أعمالي في مكانه. اسحب الشريط يمين ويسار، واضغط على أي مقطع عشان يشتغل.</p>
         </header>
-        <div class="id-grid" id="idGrid"></div>
-      </section>
+        <nav class="tabs" id="tabs" aria-label="أقسام الأعمال"></nav>
+        <div id="rows"></div>
+      </div>
     </section>
 
-    <!-- الشهادات -->
+    <!-- ===== الهويات ===== -->
+    <section class="identity" id="identity">
+      <header class="sec-intro">
+        <h2 class="h2 split">هويات بصرية</h2>
+        <p>أدلة هوية وشعارات صممتها. اضغط على أي دليل عشان تتصفح صفحاته.</p>
+      </header>
+      <div class="books" id="books"></div>
+    </section>
+
+    <!-- ===== الشهادات ===== -->
     <section class="certs" id="certs">
-      <div class="sec-head">
-        <span class="num">03</span>
-        <h2>الشهادات والدورات</h2>
-      </div>
+      <header class="sec-intro">
+        <h2 class="h2 split">الشهادات والدورات</h2>
+        <p>الرخصة المهنية والشهادة الجامعية، ثم الدورات اللي أخذتها في الذكاء الاصطناعي والتسويق والإعلام.</p>
+      </header>
       <div class="featured" id="featured"></div>
+      <div class="filters" id="filters" role="tablist" aria-label="تصفية الشهادات"></div>
       <div class="cert-grid" id="certGrid"></div>
-      <p class="privacy">أُخفيت أرقام الهوية والمعدل من الشهادات حفاظًا على الخصوصية.</p>
+      <p class="privacy">أخفيت أرقام الهوية والمعدل من الشهادات حفاظًا على الخصوصية.</p>
     </section>
 
-    <!-- تواصل -->
+    <!-- ===== تواصل ===== -->
     <section class="contact" id="contact">
-      <div class="sec-head">
-        <span class="num">04</span>
-        <h2>خلنا نشتغل سوا</h2>
+      <div class="contact-panel">
+        <span class="orb orb-coral small" data-par="-0.1" aria-hidden="true"></span>
+        <h2 class="contact-title split">عندك إعلان أو تغطية أو هوية؟ خلنا نشتغل عليها سوا.</h2>
+        <div class="contact-links" id="contactLinks"></div>
       </div>
-      <p class="contact-lead">عندك إعلان، تغطية، أو هوية تبي تبنيها؟ راسلني.</p>
-      <div class="contact-links" id="contactLinks"></div>
     </section>
   </main>
 
   <footer class="foot">
-    <p>© <span id="year"></span> ريان القارحي. جميع الحقوق محفوظة.</p>
-    <a href="#home">العودة للأعلى ↑</a>
+    <p>© <span id="year"></span> ريان القارحي</p>
+    <a href="#home">ارجع للأعلى</a>
   </footer>
 
   <!-- مشغل الفيديو -->
-  <div class="modal" id="player" role="dialog" aria-modal="true" aria-label="مشغل الفيديو" hidden>
-    <div class="modal-bar">
-      <p class="modal-title" id="playerTitle"></p>
-      <button class="close" data-close aria-label="إغلاق">✕</button>
-    </div>
-    <div class="stage">
-      <button class="arrow prev" id="vPrev" aria-label="السابق">›</button>
-      <video id="video" controls playsinline preload="metadata"></video>
-      <button class="arrow next" id="vNext" aria-label="التالي">‹</button>
+  <div class="modal" id="player" role="dialog" aria-modal="true" aria-labelledby="playerTitle" hidden>
+    <div class="modal-box">
+      <div class="modal-bar">
+        <p class="modal-title" id="playerTitle"></p>
+        <span class="modal-count" id="playerCount"></span>
+        <button class="close" data-close aria-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <div class="stage">
+        <button class="arrow" id="vPrev" aria-label="المقطع السابق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        <video id="video" controls playsinline preload="metadata"></video>
+        <button class="arrow" id="vNext" aria-label="المقطع التالي"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      </div>
     </div>
   </div>
 
   <!-- عارض الصور -->
-  <div class="modal" id="viewer" role="dialog" aria-modal="true" aria-label="عارض الصور" hidden>
-    <div class="modal-bar">
-      <p class="modal-title" id="viewerTitle"></p>
-      <span class="modal-count" id="viewerCount"></span>
-      <button class="close" data-close aria-label="إغلاق">✕</button>
-    </div>
-    <div class="stage">
-      <button class="arrow prev" id="iPrev" aria-label="السابق">›</button>
-      <img id="viewerImg" alt="">
-      <button class="arrow next" id="iNext" aria-label="التالي">‹</button>
+  <div class="modal" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle" hidden>
+    <div class="modal-box">
+      <div class="modal-bar">
+        <p class="modal-title" id="viewerTitle"></p>
+        <span class="modal-count" id="viewerCount"></span>
+        <button class="close" data-close aria-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <div class="stage">
+        <button class="arrow" id="iPrev" aria-label="الصورة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        <img id="viewerImg" alt="">
+        <button class="arrow" id="iNext" aria-label="الصورة التالية"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      </div>
     </div>
   </div>
 
