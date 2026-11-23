@@ -1,0 +1,112 @@
+// كل محتوى الموقع هنا. لتعديل عنوان أو إضافة عمل، عدّل هذا الملف فقط.
+window.SITE = {
+  contact: {
+    whatsapp: "966552249751",
+    phone: "0552249751",
+    email: "ryan1al8ar7e@gmail.com",
+  },
+
+  // أقسام الأعمال: كل قسم = مجلد من مجلدات ملف الأعمال
+  sections: [
+    {
+      id: "motion",
+      short: "موشن جرافيك",
+      title: "إعلانات الموشن جرافيك",
+      en: "Motion Graphics Ads",
+      desc: "إعلانات قصيرة بالموشن جرافيك للسوشال ميديا: فكرة، نص، حركة، وإيقاع يمسك المشاهد من أول ثانية.",
+      videos: [
+        { src: "motion/motion-01", title: "أول إعلان في التاريخ", dur: "1:20" },
+        { src: "motion/motion-02", title: "ليش الشركات تدفع ملايين؟", dur: "0:52" },
+        { src: "motion/motion-03", title: "واللي ما عنده أفكار", dur: "0:41" },
+        { src: "motion/motion-04", title: "إعلان فولكسفاغن", dur: "1:19" },
+        { src: "motion/motion-05", title: "إعلان واحد كلّف 15 ألف", dur: "0:51" },
+        { src: "motion/motion-06", title: "صرف ميزانيته على الإعلان", dur: "0:32" },
+        { src: "motion/motion-07", title: "الغرب البارد: هذا الإعلان مو لك", dur: "0:35" },
+        { src: "motion/motion-08", title: "لو غطّينا شعارك", dur: "0:39" },
+      ],
+    },
+    {
+      id: "ai",
+      short: "إعلانات AI",
+      title: "مونتاج وصناعة إعلانات AI",
+      en: "AI Ads & Editing",
+      desc: "لقطات وإعلانات منتجات صُنعت بأدوات الذكاء الاصطناعي ثم رُكّبت ومُنتجت لتصير جاهزة للنشر.",
+      videos: [
+        { src: "ai/ai-01", title: "مشروب على الشاطئ", dur: "0:19" },
+        { src: "ai/ai-02", title: "لقطة مكتب", dur: "0:19" },
+        { src: "ai/ai-03", title: "لقطة ضوء ذهبي", dur: "0:15" },
+        { src: "ai/ai-04", title: "إطلالة في الردهة", dur: "0:15" },
+        { src: "ai/ai-05", title: "ديمة: مافن الشوكولاتة", dur: "0:15" },
+        { src: "ai/ai-06", title: "انفجار نكهة الخوخ", dur: "0:15" },
+        { src: "ai/ai-07", title: "موجة ذهبية", dur: "0:15" },
+        { src: "ai/ai-08", title: "إعلان نظارة شمسية", dur: "0:15" },
+      ],
+    },
+    {
+      id: "hiraa",
+      short: "تدريب مستشفى حراء",
+      title: "تصويري ومونتاجي في تدريب مستشفى حراء",
+      en: "Hera General Hospital Internship",
+      desc: "تغطيات صوّرتها ومنتجتها خلال فترة تدريبي في مستشفى حراء العام بمكة المكرمة: فعاليات، حملات توعوية، ومحاضرات.",
+      note: { img: "certs/hiraa-thanks", label: "شهادة شكر وتقدير من مستشفى حراء العام" },
+      videos: [
+        { src: "hiraa/hiraa-01", title: "لقطات من حرم المستشفى", dur: "1:54" },
+        { src: "hiraa/hiraa-02", title: "جولة بلقطة واحدة بدون تقطيع", dur: "0:43" },
+        { src: "hiraa/hiraa-03", title: "تغطية المعرض", dur: "3:04" },
+        { src: "hiraa/hiraa-04", title: "حملة التوعية بمرض السيلياك", dur: "1:14" },
+        { src: "hiraa/hiraa-05", title: "تغطية محاضرة توعوية", dur: "0:56" },
+      ],
+    },
+    {
+      id: "other",
+      short: "أعمال أخرى",
+      title: "أعمال أخرى",
+      en: "Other Work",
+      desc: "محتوى ريلز لعملاء في المقاولات والتكييف والضيافة: تصوير، مونتاج، ونصوص على الشاشة.",
+      videos: [
+        { src: "other/other-01", title: "قبل اللياسة: نصيحة المقاول", dur: "0:31" },
+        { src: "other/other-02", title: "جولة تأسيس التكييف", dur: "0:59" },
+        { src: "other/other-03", title: "الغرب البارد: خلص الشتاء", dur: "0:28" },
+        { src: "other/other-04", title: "ريلز تصوير في فندق", dur: "2:11" },
+        { src: "other/other-05", title: "الغرب البارد: ما عندنا شي نخبيه", dur: "0:40" },
+      ],
+    },
+  ],
+
+  // الهويات البصرية
+  identities: [
+    { title: "لاذ ستوديو", en: "LATH Studio", desc: "نظام هوية كامل: الشعار، الألوان، الخطوط، وتطبيقاتها.", prefix: "identity/lath-", pages: 27, pdf: "identity/lath-brand-system.pdf" },
+    { title: "الغرب البارد", en: "Cold West", desc: "دليل هوية بصرية لشركة تكييف: نموذج أولي.", prefix: "identity/gharb-", pages: 30, pdf: "identity/cold-west-brand-guide.pdf" },
+    { title: "دارفيو", en: "DarView", desc: "شعار وتطبيقات لمتجر ديكور ومشغولات يدوية.", images: ["identity/img_0096", "identity/img_0097"] },
+  ],
+
+  // الشهادات: الرخصة المهنية والشهادة الجامعية أولاً
+  featuredCerts: [
+    { img: "certs/license", title: "شهادة التسجيل المهني للإعلاميين", by: "الهيئة العامة لتنظيم الإعلام", detail: "اختصاصي دعاية وإعلان، اختصاصي إعلامي" },
+    { img: "certs/graduation", title: "بكالوريوس الإعلام: العلاقات العامة", by: "جامعة أم القرى، كلية العلوم الاجتماعية", detail: "خريج 2026" },
+  ],
+  certs: [
+    { img: "certs/google-ai", title: "Google AI Professional Certificate", by: "Google · Coursera" },
+    { img: "certs/coursera-1", title: "AI for Writing and Communicating", by: "Google · Coursera" },
+    { img: "certs/coursera-2", title: "AI for App Building", by: "Google · Coursera" },
+    { img: "certs/coursera-3", title: "AI for Data Analysis", by: "Google · Coursera" },
+    { img: "certs/coursera-4", title: "AI for Research and Insights", by: "Google · Coursera" },
+    { img: "certs/coursera-5", title: "AI for Content Creation", by: "Google · Coursera" },
+    { img: "certs/coursera-6", title: "AI for Brainstorming and Planning", by: "Google · Coursera" },
+    { img: "certs/coursera-7", title: "AI for App Deployment", by: "Google · Coursera" },
+    { img: "certs/coursera-8", title: "AI Fundamentals", by: "Google · Coursera" },
+    { img: "certs/monshaat-plans", title: "الخطط التسويقية", by: "منشآت" },
+    { img: "certs/monshaat-emarketing", title: "التسويق الإلكتروني بأقل التكاليف", by: "منشآت" },
+    { img: "certs/monshaat-campaigns", title: "الحملات الإعلانية الإلكترونية", by: "منشآت" },
+    { img: "certs/monshaat-content", title: "تطوير المحتوى الرقمي", by: "منشآت" },
+    { img: "certs/hiraa-thanks", title: "شكر وتقدير: حفل اليوم الوطني 95", by: "مستشفى حراء العام" },
+    { img: "certs/photography", title: "مقدمة في فن التصوير الفوتوغرافي", by: "إدراك" },
+    { img: "certs/events", title: "إدارة وتنظيم الفعاليات في سوق العمل السعودي", by: "الهيئة العامة للترفيه · دروب" },
+    { img: "certs/img8175", title: "الفجوة الرقمية: أسبابها وتأثيراتها", by: "جامعة أم القرى · قسم الإعلام" },
+    { img: "certs/img8176", title: "محو الأمية الرقمية والمواطنة الرقمية", by: "جامعة أم القرى · قسم الإعلام" },
+    { img: "certs/tamkeen-selfmarketing", title: "كيف تسوّق لنفسك في سوق العمل", by: "عيادات التمكين" },
+    { img: "certs/tamkeen-ethics", title: "أخلاقيات العمل", by: "عيادات التمكين" },
+    { img: "certs/tamkeen-finance", title: "الإدارة المالية", by: "عيادات التمكين" },
+    { img: "certs/aptitude", title: "نتيجة اختبار القدرات العامة", by: "المركز الوطني للقياس" },
+  ],
+};
