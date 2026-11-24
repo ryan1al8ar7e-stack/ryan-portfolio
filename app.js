@@ -216,7 +216,7 @@
     b.style.setProperty("--i", k);
     b.innerHTML = `
       <button type="button" class="stack" aria-label="تصفح ${esc(id.title)}">
-        ${preview.map((p) => `<img src="${M + p.src}.jpg" alt="" loading="lazy">`).join("")}
+        ${preview.map((p) => `<img src="${M + p.src}${id.images ? "" : "-sm"}.jpg" alt="" loading="lazy" decoding="async">`).join("")}
       </button>
       <p class="en">${esc(id.en)}</p>
       <h3>${esc(id.title)}</h3>
@@ -338,6 +338,7 @@
       top.classList.toggle("scrolled", scrollY > 30);
       if (!reduce) orbs.forEach((o) => {
         const r = o.parentElement.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > innerHeight + 200) return;
         o.style.transform = `translateY(${(r.top) * +o.dataset.par}px)`;
       });
       ticking = false;
