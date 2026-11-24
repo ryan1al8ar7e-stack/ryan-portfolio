@@ -116,7 +116,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .photo-tag span { font: 400 14px/1.5 var(--f-ui); color: var(--ink-soft); }
 
 /* تقسيم الكلمات للحركة */
-.split .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }
+.split .w { display: inline-block; overflow: hidden; vertical-align: top; padding: .12em .14em .42em; margin: -.12em -.14em -.42em; }
 .split .w > span { display: inline-block; transform: translateY(105%); transition: transform .9s var(--ease); transition-delay: calc(var(--i) * 60ms + var(--d, 0ms)); }
 .split.in .w > span { transform: none; }
 
@@ -135,7 +135,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* ============ شريط المهارات ============ */
 .ticker { margin-top: clamp(36px, 5vw, 64px); overflow: hidden; border-block: 1px solid var(--line); padding: 18px 0; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
 .ticker-track { display: flex; width: max-content; gap: 0; animation: tick 38s linear infinite; }
-.ticker:hover .ticker-track { animation-play-state: paused; }
+@media (hover: hover) { .ticker:hover .ticker-track { animation-play-state: paused; } }
 .ticker-track span { font: 500 clamp(20px, 2.2vw, 28px) var(--f-display); white-space: nowrap; display: flex; align-items: center; gap: 28px; padding-inline-end: 28px; }
 .ticker-track span::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--coral); }
 @keyframes tick { to { transform: translateX(50%); } }
@@ -359,4 +359,5 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
   .split .w > span { transform: none; }
   .rise { opacity: 1; }
+  .ticker-track { animation: tick 60s linear infinite !important; }
 }
