@@ -132,12 +132,15 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .loading .top { opacity: 0; }
 
 /* ============ شريط المهارات ============ */
-.ticker { margin-top: clamp(36px, 5vw, 64px); overflow: hidden; border-block: 1px solid var(--line); padding: 18px 0; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
-.ticker-track { display: flex; width: max-content; gap: 0; animation: tick 38s linear infinite; will-change: transform; }
+.ticker { position: relative; margin-top: clamp(36px, 5vw, 64px); overflow: hidden; border-block: 1px solid var(--line); padding: 18px 0; direction: ltr; }
+.ticker::before, .ticker::after { content: ""; position: absolute; top: 0; bottom: 0; width: 12%; z-index: 1; pointer-events: none; }
+.ticker::before { left: 0; background: linear-gradient(90deg, var(--paper), rgba(244, 248, 249, 0)); }
+.ticker::after { right: 0; background: linear-gradient(270deg, var(--paper), rgba(244, 248, 249, 0)); }
+.ticker-track { display: flex; width: max-content; animation: tick 38s linear infinite; }
 @media (hover: hover) { .ticker:hover .ticker-track { animation-play-state: paused; } }
-.ticker-track span { font: 700 clamp(20px, 2.2vw, 28px) var(--f-display); white-space: nowrap; display: flex; align-items: center; gap: 28px; padding-inline-end: 28px; }
+.ticker-track span { direction: rtl; font: 700 clamp(20px, 2.2vw, 28px) var(--f-display); white-space: nowrap; display: flex; align-items: center; gap: 28px; padding-inline-start: 28px; }
 .ticker-track span::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--coral); }
-@keyframes tick { to { transform: translateX(50%); } }
+@keyframes tick { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
 
 /* ============ عناوين ============ */
 .h2 { font: 700 clamp(36px, 5.4vw, 72px)/1.2 var(--f-display); margin: 0; letter-spacing: 0; }
