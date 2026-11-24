@@ -76,9 +76,9 @@ window.SITE = {
 
   // الهويات البصرية
   identities: [
-    { title: "لاذ ستوديو", en: "LATH Studio", desc: "نظام هوية كامل: الشعار، الألوان، الخطوط، وتطبيقاتها.", prefix: "identity/lath-", pages: 27, pdf: "identity/lath-brand-system.pdf" },
-    { title: "الغرب البارد", en: "Cold West", desc: "دليل هوية بصرية لشركة تكييف: نموذج أولي.", prefix: "identity/gharb-", pages: 30, pdf: "identity/cold-west-brand-guide.pdf" },
-    { title: "دارفيو", en: "DarView", desc: "دليل هوية كامل لمتجر ديكور ومشغولات يدوية: الشعار، الألوان، الخطوط، والتطبيقات.", prefix: "identity/darview-", pages: 17, pdf: "identity/darview-brand-guide.pdf" },
+    { title: "لاذ ستوديو", en: "LATH Studio", desc: "نظام هوية كامل: الشعار، الألوان، الخطوط، وتطبيقاتها.", prefix: "identity/lath-", pages: 27 },
+    { title: "الغرب البارد", en: "Cold West", desc: "دليل هوية بصرية لشركة تكييف: نموذج أولي.", prefix: "identity/gharb-", pages: 30 },
+    { title: "دارفيو", en: "DarView", desc: "دليل هوية كامل لمتجر ديكور ومشغولات يدوية: الشعار، الألوان، الخطوط، والتطبيقات.", prefix: "identity/darview-", pages: 17 },
   ],
 
   // المواقع

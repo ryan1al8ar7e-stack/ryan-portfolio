@@ -223,9 +223,9 @@
       <p class="d">${esc(id.desc)}</p>
       <div class="book-meta">
         <span>${pages.length} ${pages.length > 2 ? "صفحة" : "تصاميم"}</span>
-        ${id.pdf ? `<a href="${M + id.pdf}" target="_blank" rel="noopener">حمّل الدليل PDF</a>` : `<span></span>`}
+        <button type="button" class="book-open">تصفح الدليل</button>
       </div>`;
-    $(".stack", b).onclick = () => openImages(pages, 0);
+    $(".stack", b).onclick = $(".book-open", b).onclick = () => openImages(pages, 0);
     books.append(b);
   });
 
