@@ -49,10 +49,10 @@ window.SITE = {
         { src: "ai/ai-06", title: "زوي آيس تي", dur: "0:15" },
         { src: "ai/ai-04", title: "زايروس", dur: "0:15" },
         { src: "ai/ai-02", title: "بيرين", dur: "0:19" },
-        { src: "ai/ai-03", title: "بلاك دايموند للبخور", dur: "0:15" },
+        { src: "ai/ai-03", title: "ابراق", dur: "0:15" },
         { src: "ai/ai-05", title: "ديمة", dur: "0:15" },
-        { src: "ai/ai-07", title: "أسراف", dur: "0:15" },
-        { src: "ai/ai-09", title: "كابو", dur: "0:14" },
+        { src: "ai/ai-07", title: "عساف", dur: "0:15" },
+        { src: "ai/ai-09", title: "نظارات ايوا", dur: "0:14" },
       ],
     },
     {
