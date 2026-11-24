@@ -5,7 +5,7 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const pad = (n) => String(n).padStart(2, "0");
-  const WIDE = new Set(["ai/ai-01", "ai/ai-02", "ai/ai-05", "ai/ai-08", "hiraa/hiraa-01"]);
+  const WIDE = new Set(["ai/ai-01", "ai/ai-02", "ai/ai-05", "ai/ai-09", "hiraa/hiraa-01"]);
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
   const ICON = {

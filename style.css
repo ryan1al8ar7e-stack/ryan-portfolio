@@ -58,7 +58,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .top::before { content: ""; position: absolute; inset: 0; z-index: -2; background: rgba(244, 248, 249, .86); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 1px 0 var(--line); opacity: 0; transition: opacity var(--base) var(--ease); }
 .top.scrolled::before { opacity: 1; }
 .top.scrolled { padding-block: 10px; }
-.brand { font: 700 22px/1 var(--f-display); display: flex; align-items: center; gap: 4px; }
+.brand { font: 700 22px/1 "Thmanyah Serif Text", serif; display: flex; align-items: center; gap: 4px; }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--coral); display: inline-block; margin-top: 8px; }
 .nav { display: flex; align-items: center; gap: 6px; font: 500 15px var(--f-ui); }
 .nav a { padding: 8px 14px; border-radius: 999px; transition: background var(--fast) var(--ease), color var(--fast); }
@@ -98,7 +98,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 
 .hero-text { align-self: center; padding-bottom: clamp(32px, 5vw, 72px); }
 .hero-kicker { font: 500 clamp(16px, 1.5vw, 19px) var(--f-ui); margin: 0 0 6px; color: var(--ink); }
-.hero-name { font: 700 clamp(58px, 9.6vw, 144px)/1.12 var(--f-display); margin: 0 0 18px; color: var(--ink); letter-spacing: 0; }
+.hero-name { font: 700 clamp(56px, 9.2vw, 138px)/1.12 "Thmanyah Serif Text", serif; margin: 0 0 18px; color: var(--ink); letter-spacing: 0; }
 .hero-line { font: 400 clamp(18px, 1.9vw, 24px)/1.7 var(--f-text); max-width: 30ch; margin: 0 0 32px; color: var(--ink); }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-facts { display: flex; flex-wrap: wrap; gap: 10px 34px; margin: 40px 0 0; }
