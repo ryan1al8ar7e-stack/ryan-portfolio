@@ -1,48 +1,13 @@
 // كل محتوى الموقع هنا. لتعديل عنوان أو إضافة عمل، عدّل هذا الملف فقط.
 window.SITE = {
   contact: {
-    whatsapp: "966552249751",
-    phone: "0552249751",
+    whatsapp: "966590662800",
+    phone: "0590662800",
     email: "ryan1al8ar7e@gmail.com",
   },
 
   // أقسام الأعمال: كل قسم = مجلد من مجلدات ملف الأعمال
   sections: [
-    {
-      id: "motion",
-      short: "موشن جرافيك",
-      title: "إعلانات الموشن جرافيك",
-      en: "Motion Graphics Ads",
-      desc: "إعلانات قصيرة بالموشن جرافيك للسوشال ميديا: فكرة، نص، حركة، وإيقاع يمسك المشاهد من أول ثانية.",
-      videos: [
-        { src: "motion/motion-01", title: "أول إعلان في التاريخ", dur: "1:20" },
-        { src: "motion/motion-02", title: "ليش الشركات تدفع ملايين؟", dur: "0:52" },
-        { src: "motion/motion-03", title: "واللي ما عنده أفكار", dur: "0:41" },
-        { src: "motion/motion-04", title: "إعلان فولكسفاغن", dur: "1:19" },
-        { src: "motion/motion-05", title: "إعلان واحد كلّف 15 ألف", dur: "0:51" },
-        { src: "motion/motion-06", title: "صرف ميزانيته على الإعلان", dur: "0:32" },
-        { src: "motion/motion-07", title: "الغرب البارد: هذا الإعلان مو لك", dur: "0:35" },
-        { src: "motion/motion-08", title: "لو غطّينا شعارك", dur: "0:39" },
-      ],
-    },
-    {
-      id: "ai",
-      short: "إعلانات AI",
-      title: "مونتاج وصناعة إعلانات AI",
-      en: "AI Ads & Editing",
-      desc: "لقطات وإعلانات منتجات صنعتها بأدوات الذكاء الاصطناعي، ثم ركّبتها ومنتجتها لين صارت جاهزة للنشر.",
-      disclaim: "نماذج تصورية مستقلة، غير تابعة للعلامات التجارية الظاهرة فيها.",
-      videos: [
-        { src: "ai/ai-01", title: "مشروب على الشاطئ", dur: "0:19" },
-        { src: "ai/ai-02", title: "لقطة مكتب", dur: "0:19" },
-        { src: "ai/ai-03", title: "لقطة ضوء ذهبي", dur: "0:15" },
-        { src: "ai/ai-04", title: "إطلالة في الردهة", dur: "0:15" },
-        { src: "ai/ai-05", title: "ديمة: مافن الشوكولاتة", dur: "0:15" },
-        { src: "ai/ai-06", title: "انفجار نكهة الخوخ", dur: "0:15" },
-        { src: "ai/ai-07", title: "موجة ذهبية", dur: "0:15" },
-        { src: "ai/ai-08", title: "إعلان نظارة شمسية", dur: "0:15" },
-      ],
-    },
     {
       id: "hiraa",
       short: "تدريب مستشفى حراء",
@@ -67,9 +32,44 @@ window.SITE = {
       videos: [
         { src: "other/other-01", title: "قبل اللياسة: نصيحة المقاول", dur: "0:31" },
         { src: "other/other-02", title: "جولة تأسيس التكييف", dur: "0:59" },
-        { src: "other/other-03", title: "الغرب البارد: خلص الشتاء", dur: "0:28" },
-        { src: "other/other-04", title: "ريلز تصوير في فندق", dur: "2:11" },
         { src: "other/other-05", title: "الغرب البارد: ما عندنا شي نخبيه", dur: "0:40" },
+        { src: "other/other-06", title: "جولة في حي حراء", dur: "2:02" },
+        { src: "other/other-03", title: "الغرب البارد: خلص الشتاء", dur: "0:28" },
+      ],
+    },
+    {
+      id: "ai",
+      short: "إعلانات AI",
+      title: "مونتاج وصناعة إعلانات AI",
+      en: "AI Ads & Editing",
+      desc: "لقطات وإعلانات منتجات صنعتها بأدوات الذكاء الاصطناعي، ثم ركّبتها ومنتجتها لين صارت جاهزة للنشر.",
+      disclaim: "نماذج تصورية مستقلة، غير تابعة للعلامات التجارية الظاهرة فيها.",
+      videos: [
+        { src: "ai/ai-01", title: "مشروب على الشاطئ", dur: "0:19" },
+        { src: "ai/ai-02", title: "لقطة مكتب", dur: "0:19" },
+        { src: "ai/ai-03", title: "لقطة ضوء ذهبي", dur: "0:15" },
+        { src: "ai/ai-04", title: "إطلالة في الردهة", dur: "0:15" },
+        { src: "ai/ai-05", title: "ديمة: مافن الشوكولاتة", dur: "0:15" },
+        { src: "ai/ai-06", title: "انفجار نكهة الخوخ", dur: "0:15" },
+        { src: "ai/ai-07", title: "موجة ذهبية", dur: "0:15" },
+        { src: "ai/ai-08", title: "إعلان نظارة شمسية", dur: "0:15" },
+      ],
+    },
+    {
+      id: "motion",
+      short: "موشن جرافيك",
+      title: "إعلانات الموشن جرافيك",
+      en: "Motion Graphics Ads",
+      desc: "إعلانات قصيرة بالموشن جرافيك للسوشال ميديا: فكرة، نص، حركة، وإيقاع يمسك المشاهد من أول ثانية.",
+      videos: [
+        { src: "motion/motion-01", title: "أول إعلان في التاريخ", dur: "1:20" },
+        { src: "motion/motion-02", title: "ليش الشركات تدفع ملايين؟", dur: "0:52" },
+        { src: "motion/motion-03", title: "واللي ما عنده أفكار", dur: "0:41" },
+        { src: "motion/motion-04", title: "إعلان فولكسفاغن", dur: "1:19" },
+        { src: "motion/motion-05", title: "إعلان واحد كلّف 15 ألف", dur: "0:51" },
+        { src: "motion/motion-06", title: "صرف ميزانيته على الإعلان", dur: "0:32" },
+        { src: "motion/motion-07", title: "الغرب البارد: هذا الإعلان مو لك", dur: "0:35" },
+        { src: "motion/motion-08", title: "لو غطّينا شعارك", dur: "0:39" },
       ],
     },
   ],
@@ -78,7 +78,7 @@ window.SITE = {
   identities: [
     { title: "لاذ ستوديو", en: "LATH Studio", desc: "نظام هوية كامل: الشعار، الألوان، الخطوط، وتطبيقاتها.", prefix: "identity/lath-", pages: 27, pdf: "identity/lath-brand-system.pdf" },
     { title: "الغرب البارد", en: "Cold West", desc: "دليل هوية بصرية لشركة تكييف: نموذج أولي.", prefix: "identity/gharb-", pages: 30, pdf: "identity/cold-west-brand-guide.pdf" },
-    { title: "دارفيو", en: "DarView", desc: "شعار وتطبيقات لمتجر ديكور ومشغولات يدوية.", images: ["identity/img_0096", "identity/img_0097"] },
+    { title: "دارفيو", en: "DarView", desc: "دليل هوية كامل لمتجر ديكور ومشغولات يدوية: الشعار، الألوان، الخطوط، والتطبيقات.", prefix: "identity/darview-", pages: 17, pdf: "identity/darview-brand-guide.pdf" },
   ],
 
   // الشهادات: الرخصة المهنية والشهادة الجامعية أولاً

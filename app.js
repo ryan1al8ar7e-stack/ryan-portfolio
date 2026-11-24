@@ -351,7 +351,7 @@
     const id = "#" + e.target.id;
     navLinks.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === id));
   }), { rootMargin: "-40% 0px -55% 0px" });
-  ["about", "work", "identity", "certs", "contact"].forEach((id) => spy.observe(document.getElementById(id)));
+  ["home", "about", "work", "identity", "certs", "contact"].forEach((id) => spy.observe(document.getElementById(id)));
 
   const rowSpy = new IntersectionObserver((es) => es.forEach((e) => {
     if (!e.isIntersecting) return;
