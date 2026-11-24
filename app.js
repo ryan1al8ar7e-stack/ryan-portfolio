@@ -7,6 +7,9 @@
   const pad = (n) => String(n).padStart(2, "0");
   const WIDE = new Set(["ai/ai-01", "ai/ai-02", "ai/ai-05", "ai/ai-09", "hiraa/hiraa-01"]);
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  scrollTo(0, 0);
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
   const ICON = {
     prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',
@@ -242,8 +245,18 @@
       const y = head.getBoundingClientRect().top + scrollY - over + 4;
       scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
     }, 30);
-    history.replaceState(null, "", "#work");
   }));
+
+  /* أزرار القائمة تنزل للقسم من غير ما تغيّر الرابط، عشان الرابط يفتح دايمًا على الصفحة الرئيسية */
+  document.addEventListener("click", (e) => {
+    const l = e.target.closest('a[href^="#"]');
+    if (!l || e.defaultPrevented) return;
+    const id = l.getAttribute("href").slice(1);
+    const el = id ? document.getElementById(id) : null;
+    if (!el) return;
+    e.preventDefault();
+    setTimeout(() => el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }), 30);
+  });
 
   /* ---------- المواقع ---------- */
   const siteList = $("#siteList");
