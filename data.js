@@ -81,6 +81,12 @@ window.SITE = {
     { title: "دارفيو", en: "DarView", desc: "دليل هوية كامل لمتجر ديكور ومشغولات يدوية: الشعار، الألوان، الخطوط، والتطبيقات.", prefix: "identity/darview-", pages: 17, pdf: "identity/darview-brand-guide.pdf" },
   ],
 
+  // المواقع
+  sites: [
+    { title: "لاذ ستوديو", domain: "lathstudio.tech", url: "https://lathstudio.tech/", img: "sites/lath", desc: "موقع استديو إعلاني سعودي: معرض أعمال متحرك في الواجهة، الخدمات، ودراسة إبداعية، بالعربي والإنجليزي." },
+    { title: "الغرب البارد", domain: "coldwest.sa", url: "https://coldwest.sa/", img: "sites/cw", desc: "موقع لشركة صيانة مكيفات في مكة: العميل يختار مشكلة مكيفه، يشوف أسبابها الشائعة، ويرسلها للفني على واتساب برسالة جاهزة." },
+  ],
+
   // الشهادات: الرخصة المهنية والشهادة الجامعية أولاً
   featuredCerts: [
     { img: "certs/license", title: "شهادة التسجيل المهني للإعلاميين", by: "الهيئة العامة لتنظيم الإعلام", detail: "اختصاصي دعاية وإعلان، اختصاصي إعلامي" },

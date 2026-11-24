@@ -229,6 +229,24 @@
     books.append(b);
   });
 
+  /* ---------- المواقع ---------- */
+  const siteList = $("#siteList");
+  (S.sites || []).forEach((st, k) => {
+    const a = document.createElement("article");
+    a.className = "site rise";
+    a.style.setProperty("--i", k);
+    a.innerHTML = `
+      <a class="site-show" href="${st.url}" target="_blank" rel="noopener" aria-label="زيارة موقع ${esc(st.title)}">
+        <span class="browser"><span class="bar" aria-hidden="true"><i></i><i></i><i></i><b>${esc(st.domain)}</b></span><img src="${M + st.img}-desktop.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span class="phone"><img src="${M + st.img}-mobile.jpg" alt="" loading="lazy" decoding="async"></span>
+      </a>
+      <p class="en">${esc(st.domain)}</p>
+      <h3>${esc(st.title)}</h3>
+      <p class="d">${esc(st.desc)}</p>
+      <a class="btn btn-ink site-cta" href="${st.url}" target="_blank" rel="noopener">زيارة الموقع</a>`;
+    siteList.append(a);
+  });
+
   /* ---------- الشهادات ---------- */
   const allCerts = [...S.featuredCerts, ...S.certs].map((c) => ({ src: c.img, title: c.title }));
   S.featuredCerts.forEach((c, i) => {
@@ -352,7 +370,7 @@
     const id = "#" + e.target.id;
     navLinks.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === id));
   }), { rootMargin: "-40% 0px -55% 0px" });
-  ["home", "about", "work", "identity", "certs", "contact"].forEach((id) => spy.observe(document.getElementById(id)));
+  ["home", "about", "work", "identity", "sites", "certs", "contact"].forEach((id) => spy.observe(document.getElementById(id)));
 
   const rowSpy = new IntersectionObserver((es) => es.forEach((e) => {
     if (!e.isIntersecting) return;
