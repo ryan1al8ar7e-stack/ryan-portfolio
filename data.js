@@ -46,13 +46,13 @@ window.SITE = {
       disclaim: "نماذج تصورية مستقلة، غير تابعة للعلامات التجارية الظاهرة فيها.",
       videos: [
         { src: "ai/ai-01", title: "كوكاكولا", dur: "0:19" },
-        { src: "ai/ai-06", title: "ZOI Ice Tea", dur: "0:15" },
-        { src: "ai/ai-04", title: "ZYROS", dur: "0:15" },
+        { src: "ai/ai-06", title: "زوي آيس تي", dur: "0:15" },
+        { src: "ai/ai-04", title: "زايروس", dur: "0:15" },
         { src: "ai/ai-02", title: "بيرين", dur: "0:19" },
-        { src: "ai/ai-03", title: "Black Diamond Incense", dur: "0:15" },
+        { src: "ai/ai-03", title: "بلاك دايموند للبخور", dur: "0:15" },
         { src: "ai/ai-05", title: "ديمة", dur: "0:15" },
-        { src: "ai/ai-07", title: "ASSRAF", dur: "0:15" },
-        { src: "ai/ai-09", title: "CAPO", dur: "0:14" },
+        { src: "ai/ai-07", title: "أسراف", dur: "0:15" },
+        { src: "ai/ai-09", title: "كابو", dur: "0:14" },
       ],
     },
     {
