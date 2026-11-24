@@ -229,6 +229,22 @@
     books.append(b);
   });
 
+  /* على الجوال: زر «أعمالي» يوصلك لأول مقطع مباشرة */
+  document.querySelectorAll('a[href="#work"]').forEach((l) => l.addEventListener("click", (e) => {
+    if (innerWidth > 760) return;
+    const first = document.querySelector("#rows .row");
+    if (!first) return;
+    e.preventDefault();
+    // ننتظر إغلاق قائمة الجوال (اللي تقفل التمرير) قبل ما ننزل
+    setTimeout(() => {
+      const head = first.querySelector(".row-head") || first;
+      const over = document.getElementById("top").offsetHeight + document.getElementById("tabs").offsetHeight;
+      const y = head.getBoundingClientRect().top + scrollY - over + 4;
+      scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
+    }, 30);
+    history.replaceState(null, "", "#work");
+  }));
+
   /* ---------- المواقع ---------- */
   const siteList = $("#siteList");
   (S.sites || []).forEach((st, k) => {
